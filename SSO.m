@@ -35,7 +35,7 @@
 %low:               The lower bound of the search space
 %up:                The higher bound of the search space
 
-
+%% Note: This version of the code is without mutation part in which is a secondary thing.
 function [sgBestScore,sgBest,GlobalBestCost]=SSO(Benchmark_Function_ID,n,iteration)
 
 [low,up,dim]=benchmark_functions_details(Benchmark_Function_ID);%define the boundary and dimension of the benchmark function
@@ -83,7 +83,7 @@ end
 velocity = .3*randn(n,dim) ;
 
 %%main loop
-iter = 0 ;                  % Iterations’ counter
+iter = 0 ;                  % Iterationsâ€™ counter
 while  ( iter < iteration )
 
 
